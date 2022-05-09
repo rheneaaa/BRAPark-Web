@@ -23,7 +23,7 @@ ob_start();
 <body>
     <?php 
         //Incluir os Arquivos PHP
-        require './config/Conn.php';
+        require './Conn.php';
         require './Crud.php';
 
         //Recebe o Array do form

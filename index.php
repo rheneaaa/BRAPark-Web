@@ -22,7 +22,7 @@ session_start();
 
     <?php 
         //Incluir os Arquivos PHP
-        require './config/Conn.php';
+        require './Conn.php';
         require './Crud.php';
         //Mostra a mensagen e depois destroi a mesma
         if (isset($_SESSION['msg'])) {
