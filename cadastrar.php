@@ -18,7 +18,7 @@ ob_start();
 
     <link rel="stylesheet" href="custom.css"> 
 
-    <title>BRA PARK</title>
+    <title>BRA parking</title>
 </head>
 <body>
     <?php 
@@ -47,8 +47,8 @@ ob_start();
 
     ?>
     <!-- Criação da Barra de Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">BRAPark</a>
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">BRA Parking</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" 
     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
     aria-expanded="false" aria-label="Toggle navigation">

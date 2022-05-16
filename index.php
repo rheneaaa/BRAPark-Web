@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@ session_start();
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
     crossorigin="anonymous">
 
-    <title>BRA PARK</title>
+    <title>BRA Parking</title>
 </head>
 <body>
     <a href="cadastrar.php" target="page">Cadastrar</a><br>

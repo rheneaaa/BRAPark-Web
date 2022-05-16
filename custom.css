@@ -1,3 +1,14 @@
 .container{
     margin-top: 10px;
 }
+.navbar {
+    color: #0063e5;
+    background-color: #040714;
+}
+.collapse ul li a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 25px;
+}
