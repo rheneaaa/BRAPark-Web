@@ -39,10 +39,10 @@ session_start();
             <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Cadastro <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="cadastrar.php">Cadastro <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.php">Contato <span class="sr-only">(current)</span></a>
         </li>
         </ul>
         </form>

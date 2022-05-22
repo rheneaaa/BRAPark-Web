@@ -23,7 +23,7 @@ ob_start();
 <body>
     <?php 
         //Incluir os Arquivos PHP
-        require './config/Conn.php';
+        require './Conn.php';
         require './Crud.php';
 
         //Recebe o Array do form
@@ -61,7 +61,7 @@ ob_start();
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="login.php">Login <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="#">Cadastro <span class="sr-only">(current)</span></a>
@@ -100,7 +100,7 @@ ob_start();
                         </div>
                         <div class="form-group mb-2">
                             <label for="exampleInputPassword1">Senha</label>
-                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="*********">
                         </div>
                         <div class="form-group mb-2">
                             <label for="exampleInputCep">CEP</label>

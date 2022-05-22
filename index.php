@@ -35,18 +35,27 @@ session_start();
             
         //Insanciar a Classes
         //Criando o Objeto $listarUsuarios
-        $litarteste = new Crud();
+        $listarusuario = new Crud();
         //Instanciar o método listar
-        $result_teste = $litarteste->listar();
+        $result_usuario = $listarusuario->listarUsuarios();
             
-        //Imprime informações do danco teste
-        foreach($result_teste as $row_teste){
+        //Imprime informações das tabelas Usuarios, planos, niveis_acesso, enberecos e veiculos
+        foreach($result_usuario as $row_usuario){
             //var_dump($row_teste);
-            extract($row_teste);
+            extract($row_usuario);
+            echo "Dados Pessoais: <br>";
             echo "ID do usuário: $id<br>";
             echo "Nome do usuário: $nome<br>";
+            echo "Contato do usuário: $celular<br>";
+            echo "Cpf do usuário: $cpf<br>";
             echo "E-mail do usuário: $email<br>";
-            echo "Idade do usuário: $idade<br>";
+            echo "Enbereço: <br>";
+            echo "Rua: $rua   N°: $numero " .  ucfirst($complemento)."   Cep: $cep<br>";
+            echo "Dados do Veiculo do Usuário: $nome<br>";
+            echo "Fabricante: $marca    Modelo: $modelo    Placa: ". strtoupper($placa)."<br>";
+            echo "Dados Complementares: <br>";
+            echo "Nivel de Acesso: $nivel<br>";
+            echo "Plano: $plano<br>";
             echo "Usuário criado: " . date('d/m/Y H:i:s', strtotime($created))."<br><hr>";
                 
         }
