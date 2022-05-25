@@ -78,31 +78,6 @@ ob_start();
         </div>
     </nav>
 
-<<<<<<< HEAD
-=======
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav col-md-3 ml-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="login.php">Login <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Cadastro <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
-        </li>
-        </ul>
-        </form>
-    </div>
-</nav>
->>>>>>> origin/master
-
-
-    <!-- Form de cadastro teste -->
-<<<<<<< HEAD
     <div class="container">
         <h2>Cadastro de Usuários</h2><br>
         <form class="row g-3 needs-validation" novalidate>
@@ -111,78 +86,6 @@ ob_start();
                 <input type="text" class="form-control" id="nome_usuario" placeholder="Digite seu nome completo" required>
                 <div class="valid-feedback">
                     Ok
-=======
-    <div class="container mb-3">
-        <div class="row">
-            <div class="col-8">
-                <legend>Cadastro de Usuários</legend>
-                    <form method="POST" action="">
-                        <div class="form-group mb-2">
-                            <label for="exampleInputName">Nome</label>
-                            <input type="text" name="nome" class="form-control form-control-sm" id="exampleInputName" placeholder="Nome Completo">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="exampleInputPhone">Telefone</label>
-                            <input type="text" name="celular" class="form-control form-control-sm" id="exampleInputPhone" placeholder="(XX) X XXXX - XXXX">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="exampleInputCpf">CPF</label>
-                            <input type="text" name="cpf" class="form-control form-control-sm" id="exampleInputCpf" placeholder="XXX.XXX.XXX-XX">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="exampleInputEmail">E-mail</label>
-                            <input type="email" name="email" class="form-control form-control-sm" id="exampleInputEmail" placeholder="Ex: joao@gmail.com" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="exampleInputPassword1">Senha</label>
-                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="*********">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="exampleInputCep">CEP</label>
-                            <input type="text" name="cep" class="form-control form-control-sm" id="exampleInputCep" placeholder="XXXXXX-XXX">
-                        </div>
-                        
-                        <div class="row">  
-                            <div class="col-md-8 col-xs-8">
-                                <div class="form-group mb-2">
-                                    <label for="exampleInputRua">Logradouro</label>
-                                    <input type="text" name="rua" class="form-control form-control-sm" id="exampleInputRua" placeholder="Rua Número Um">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-xs-4">
-                                <div class="form-group mb-2">
-                                    <label for="exampleInputNum">Número</label>
-                                    <input type="text" name="numero" class="form-control form-control-sm" id="exampleInputNum">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group mb-2">
-                            <label for="exampleInputComplemento">Complemento</label>
-                            <input type="text" name="complemento" class="form-control form-control-sm" id="exampleInputComplemento" placeholder="Apartameto, sala, lote, ... ">
-                        </div>
-
-
-                                <label >Nível de Acesso</label><br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioColab">
-                                    <label class="form-check-label" for="flexRadioColab">
-                                        Colaborador
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioCliente">
-                                    <label class="form-check-label" for="flexRadioCliente">
-                                        Cliente
-                                    </label>
-                                </div>
-
-                        <br><br>
-                        <button type="submit" class="btn btn-outline-dark btn-sm" name="SendAddUser">Enviar</button>
-                        <input class="btn btn-outline-dark btn-sm" type="reset" value="Limpar">
-                    </form>
->>>>>>> origin/master
-                </div>
                 <div class="invalid-feedback">
                     Digite o nome corretamente!
                 </div><br>
