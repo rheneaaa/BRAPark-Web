@@ -20,7 +20,7 @@ session_start();
     <title>BRA PARK</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="row">
             <div class="col-2"></div>
             <div class="col-md-9">                
@@ -41,7 +41,7 @@ session_start();
                     <a class="nav-link" href="cadastrar.php">Cadastrar <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="listar.php">Listar<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="vagas.php">Vagas <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="contato.php">Contato <span class="sr-only">(current)</span></a>
@@ -61,40 +61,47 @@ session_start();
         }
         
 
-        echo "<h2>Listar Vagas Livres</h2>"; 
+        echo "<h2>Listar Usuários</h2>";
+            
         //Insanciar a Classes
         //Criando o Objeto $listarUsuarios
-        $listarvagas = new Crud();
+        $listarusuario = new Crud();
         //Instanciar o método listar
-        $result_vagas = $listarvagas->listarVagasLivres();
+        $result_usuario = $listarusuario->listarUsuarios();
             
-        //Imprime informações do danco teste
-        foreach($result_vagas as $row_vagas){
-            //var_dump($row_vagas);
-            extract($row_vagas);
-            echo "N° da Vaga: $n_vaga<br>";
-            echo "Horario de Entrada: $hora_entrada<br>";
-            echo "Horario De Saida: $hora_saida<br><br><hr>";
+        //Imprime informações das tabelas Usuarios, planos, niveis_acesso, enberecos e veiculos
+        foreach($result_usuario as $row_usuario){
+            //var_dump($row_teste);
+            extract($row_usuario);
+            echo "Dados Pessoais: <br>";
+            echo "ID do usuário: $id<br>";
+            echo "Nome do usuário: $nome<br>";
+            echo "Contato do usuário: $celular<br>";
+            echo "Cpf do usuário: $cpf<br>";
+            echo "E-mail do usuário: $email<br>";
+            echo "Enbereço: <br>";
+            echo "Rua: $rua   N°: $numero " .  ucfirst($complemento)."   Cep: $cep<br>";
+            echo "Dados do Veiculo do Usuário: $nome<br>";
+            echo "Fabricante: $marca    Modelo: $modelo    Placa: ". strtoupper($placa)."<br>";
+            echo "Dados Complementares: <br>";
+            echo "Nivel de Acesso: $nivel<br>";
+            echo "Plano: $plano<br>";
+            echo "Usuário criado: " . date('d/m/Y H:i:s', strtotime($created))."<br><hr>";
                 
         }
-
-        echo "<h2>Listar Vagas Ocupadas</h2>";
-        //Insanciar a Classes
-        //Criando o Objeto $listarUsuarios
-        $listarvagas = new Crud();
-        //Instanciar o método listar
-        $result_vagas = $listarvagas->listarVagasOcupadas();
-            
-        //Imprime informações do danco teste
-        foreach($result_vagas as $row_vagas){
-            //var_dump($row_vagas);
-            extract($row_vagas);
-            echo "N° da Vaga: $n_vaga<br>";
-            echo "Horario de Entrada: $hora_entrada<br>";
-            echo "Horario De Saida: $hora_saida<br><br><hr>";
-                
-        }
-
+//Por enquanto somente foi criado o banco de dados (park) e ás tabelas usuarios e teste
+//Foi criado a class de Conn que faz a conexão com o banco ainda em teste
+//E a class Usuarios ainde em desenvonvimento  
+//function listar pronta ainda em teste 
+//24/04/2022 qualquer alteração por favor comente a mesma e compartilhe 
+////////////////////////////////////////////////////////////////////////////////////////////////
+//Alterações da dia 26/04/2022
+//Foi criado a class de Conn que faz a conexão com o banco funcionando perfeitamente
+//class Usuarios ainde em desenvonvimento 
+//function listar pronta funcionando perfeitamente
+//function cadastrar criada ainda em teste 
+//Foi implementado session_start() e ob_start() para limpar o cache após cadastrar um usuário
+//qualquer alteração por favor comente a mesma e compartilhe
 ?>
 
     <!-- JQuery -->

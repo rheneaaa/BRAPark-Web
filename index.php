@@ -1,85 +1,72 @@
-<?php 
-session_start();
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Alteracao: incluindo shrink-to BS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- CSS Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
-    crossorigin="anonymous">
-
-    <title>BRA PARK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>BRA parking - Home</title>
 </head>
+
 <body>
-    <a href="cadastrar.php" target="page">Cadastrar</a><br>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <img src="image/Logo carro.png" alt="BRA parking">
+                <a href="index.html">BRA parking</a>
+            </div>
+            <ul class="menu" id="menu-site">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="sobre-empresa.php">Sobre Empresa</a></li>
+                <li><a href="contato.php">Contato</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="top">
+        <div class="max-width">
+            <div class="top-content">
+                <div class="text-1">Temos para você.</div>
+                <div class="text-2">A solução de que precisa.</div>
+                <div class="text-3">Podemos ajudar você!</div>
+                <a href="contato.php">Entre em Contato</a>
 
-    <?php 
-        //Incluir os Arquivos PHP
-        require './Conn.php';
-        require './Crud.php';
-        //Mostra a mensagen e depois destroi a mesma
-        if (isset($_SESSION['msg'])) {
-        echo $_SESSION['msg'];
-        unset($_SESSION['msg']);
-        }
-        
 
-        echo "<h2>Listar Usuários</h2>";
-            
-        //Insanciar a Classes
-        //Criando o Objeto $listarUsuarios
-        $listarusuario = new Crud();
-        //Instanciar o método listar
-        $result_usuario = $listarusuario->listarUsuarios();
-            
-        //Imprime informações das tabelas Usuarios, planos, niveis_acesso, enberecos e veiculos
-        foreach($result_usuario as $row_usuario){
-            //var_dump($row_teste);
-            extract($row_usuario);
-            echo "Dados Pessoais: <br>";
-            echo "ID do usuário: $id<br>";
-            echo "Nome do usuário: $nome<br>";
-            echo "Contato do usuário: $celular<br>";
-            echo "Cpf do usuário: $cpf<br>";
-            echo "E-mail do usuário: $email<br>";
-            echo "Enbereço: <br>";
-            echo "Rua: $rua   N°: $numero " .  ucfirst($complemento)."   Cep: $cep<br>";
-            echo "Dados do Veiculo do Usuário: $nome<br>";
-            echo "Fabricante: $marca    Modelo: $modelo    Placa: ". strtoupper($placa)."<br>";
-            echo "Dados Complementares: <br>";
-            echo "Nivel de Acesso: $nivel<br>";
-            echo "Plano: $plano<br>";
-            echo "Usuário criado: " . date('d/m/Y H:i:s', strtotime($created))."<br><hr>";
-                
-        }
-//Por enquanto somente foi criado o banco de dados (park) e ás tabelas usuarios e teste
-//Foi criado a class de Conn que faz a conexão com o banco ainda em teste
-//E a class Usuarios ainde em desenvonvimento  
-//function listar pronta ainda em teste 
-//24/04/2022 qualquer alteração por favor comente a mesma e compartilhe 
-////////////////////////////////////////////////////////////////////////////////////////////////
-//Alterações da dia 26/04/2022
-//Foi criado a class de Conn que faz a conexão com o banco funcionando perfeitamente
-//class Usuarios ainde em desenvonvimento 
-//function listar pronta funcionando perfeitamente
-//function cadastrar criada ainda em teste 
-//Foi implementado session_start() e ob_start() para limpar o cache após cadastrar um usuário
-//qualquer alteração por favor comente a mesma e compartilhe
-?>
+            </div>
+        </div>
+    </section>
 
-    <!-- JQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" 
-    crossorigin="anonymous"></script>
+    <section class="premium">
+        <div class="max-width">
+            <h2 class="title">Serviço Premium</h2>
+            <div class="premium-content">
+                <div class="column left">
+                    <img src="image/vaga carro.jpg" alt="Serviço premium">
+                </div>
+                <div class="column right">
+                    <div class="text">
+                        Encontrar estacionamento não deve ser um aborrecimento.
+                        Vamos estacionar e não nos preocupar.
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore saepe omnis in et ea assumenda cumque eveniet libero, cum itaque facilis rerum ut tempora magni minima asperiores vero velit aliquam.
+                    </p>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Created By <a href="https://google.com.br">BRA parking</a></span>
+    </footer>
+
+    <script src="js/custom.js"></script>
 </body>
 </html>

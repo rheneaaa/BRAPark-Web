@@ -18,9 +18,10 @@
                 <a href="index.html">BRA parking</a>
             </div>
             <ul class="menu" id="menu-site">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre-empresa.html">Sobre Empresa</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="sobre-empresa.php">Sobre Empresa</a></li>
+                <li><a href="contato.php">Contato</a></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
             <div class="menu-btn" id="menu-btn">
                 <i class="fa-solid fa-bars" id="menu-icon"></i>

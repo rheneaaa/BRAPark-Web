@@ -15,7 +15,7 @@ session_start();
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
     crossorigin="anonymous">
 
-    <link rel="stylesheet" href="customlogin.css"> 
+    <link rel="stylesheet" href="css/customlogin.css"> 
 
     <title>Login</title>
 </head>
@@ -40,16 +40,13 @@ session_start();
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav col-md-3 ml-auto">
         <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
-        </li>
+            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        </li>        
         <li class="nav-item active">
             <a class="nav-link" href="cadastrar.php">Cadastro <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="index.php">Contato <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="contato.php">Contato <span class="sr-only">(current)</span></a>
         </li>
         </ul>
         </form>
