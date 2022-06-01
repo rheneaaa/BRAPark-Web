@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="shortcut icon" href="image/favicon.ico">
-    <title>BRA parking - Contato</title>
-    
+    <title>BRA parking - Home</title>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo">
+                <img src="image/Logo carro.png" alt="BRA parking">
                 <a href="index.html">BRA parking</a>
             </div>
             <ul class="menu" id="menu-site">
@@ -28,6 +28,7 @@
             </div>
         </div>
     </nav>
+    
     <section class="contact">
         <div class="max-width">
             <h2 class="title">Contato</h2>
